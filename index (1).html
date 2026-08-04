@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian — Responsive Navbar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="9.5" stroke="#4c7eff" stroke-width="1.4"/>
+            <g class="needle">
+              <path d="M11 4L13 11L11 18L9 11L11 4Z" fill="#4c7eff"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-font">Meridian</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <div class="nav-runner" id="navRunner"></div>
+        <li><a href="#" class="active" data-index="0">Work</a></li>
+        <li><a href="#" data-index="1">Studio</a></li>
+        <li><a href="#" data-index="2">Journal</a></li>
+        <li><a href="#" data-index="3">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#" class="nav-cta desktop-only">
+          Start a project
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul class="mobile-links">
+      <li><a href="#"><span class="index">01</span>Work</a></li>
+      <li><a href="#"><span class="index">02</span>Studio</a></li>
+      <li><a href="#"><span class="index">03</span>Journal</a></li>
+      <li><a href="#"><span class="index">04</span>Contact</a></li>
+    </ul>
+    <div class="mobile-foot">
+      <div class="mobile-foot-links">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+      </div>
+      <a href="#" class="mobile-cta">Start a project</a>
+    </div>
+  </div>
+
+  <main class="demo-hero">
+    <h1>Resize the window to see it adapt.</h1>
+    <p>This navbar reflows across three breakpoints — a full inline menu with a gliding indicator on desktop, a condensed bar with a hamburger on tablets, and a full-screen staggered menu on mobile. Scroll down to see it shrink and pick up a frosted background.</p>
+    <div class="demo-hint"><span class="dot"></span>Try resizing or scrolling</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
